@@ -40,14 +40,14 @@
     <div class="presentacion">
         <div class="banner">
             <img id="displayed-banner" src="imagenes/img-1_1920.jpg" alt="">
-            <label for="input-banner" class="btn-modificar-banner" aria-label="edit-banner" onclick="cambiar_banner()" style ="display: none">
+            <label for="input-banner" class="btn-modificar-banner" aria-label="edit-banner" onclick="cambiar_banner()"><!--style ="display: none"-->
                 <a href="#"><i class="fa fa-pen"></i></a>
             </label>
-            <input type="file" id="input-banner" accept="image/*" style="display: none">
+            <input type="file" id="input-banner" accept="image/*" style ="display: none">
         </div>
         <div class="foto-pers">
             <img id="displayed-photo" src="imagenes/Foto-1.jpg" alt="">
-            <label for="input-photo" class="btn-modificar-foto-pers" aria-label="edit" onclick="cambiar_PRES()"style ="display: none" >
+            <label for="input-photo" class="btn-modificar-foto-pers" aria-label="edit" onclick="cambiar_PRES"><!--style ="display: none"-->
                 <a href="#"><i class="fa fa-pen"></i></a>
             </label>
             <input type="file" id="input-photo" accept="image/*" style="display: none">
@@ -57,11 +57,11 @@
             margin-top: 5px"> 
             <div class="nombre">            
                 <b id="nombre">Alejandro Carnevalini</b>
-                <div class="btn-edit-nombre" id="btn-present" onclick="cambiar_parrafo_PRES()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>
+                <div class="btn-edit-nombre" id="btn-present" onclick="cambiar_parrafo_PRES()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>
             </div>
             <div>
                 <a id="titulo">Full Stack Developer Jr.</a>
-                <div class="btn-edit-tit" id="btn-present" onclick="cambiar_parrafo_PRES2()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>                
+                <div class="btn-edit-tit" id="btn-present" onclick="cambiar_parrafo_PRES2()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>                
             </div>
         </aside>
         <br clear="right">
@@ -74,7 +74,7 @@
             <div id="div-acercade">
                 <div class="acercade-1">        
                     <a id="contenidoAD-1">Técnico en electrónica y telecomunicaciones, informático, queriendo ingresar al mundo de la programación.</a>
-                    <div class="btn-edit-sec" id="camb_parrafo_AD" onclick="cambiar_parrafo_AD()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>                    
+                    <div class="btn-edit-sec" id="camb_parrafo_AD" onclick="cambiar_parrafo_AD()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>                    
                     <br clear="right">
                     <br clear="right">
                 </div> 
@@ -82,14 +82,14 @@
         </div>
 
         <div class="seccion"><b>Experiencia</b>
-            <div class="btn-edit-sec" onclick="agregar_exp()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-plus"></i></a></div>   
+            <div class="btn-edit-sec" onclick="agregar_exp()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-plus"></i></a></div>   
             <br clear="right">
             <br clear="right">
             <div id="div-experiencia">
                 <div class="experiencia-1">        
                     <a id="contenidoEX-1">Técnico reparador electrónica en general y computación desde el año 2002 hasta la actualidad, iniciándome en el mundo de la programación.</a>
-                    <div class="btn-edit-sec" id="elim_parrafo_EX" onclick="eliminar_contenido_EX()"style ="display: none" ><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
-                    <div class="btn-edit-sec" id="camb_parrafo_EX" onclick="cambiar_parrafo_EX()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>                    
+                    <div class="btn-edit-sec" id="elim_parrafo_EX" onclick="eliminar_contenido_EX()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
+                    <div class="btn-edit-sec" id="camb_parrafo_EX" onclick="cambiar_parrafo_EX()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>                    
                     <br clear="right">
                     <br clear="right">
                 </div> 
@@ -98,7 +98,7 @@
 
         <div class="seccion">
             <b>Educacion</b>
-            <div class="btn-edit-sec" onclick="agregar_educ()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-plus"></i></a></div>
+            <div class="btn-edit-sec" onclick="agregar_educ()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-plus"></i></a></div>
             <br clear="right">
             <p></p>
             <div id="miDiv">
@@ -106,8 +106,8 @@
                  <img id="logoED0" src="imagenes\Logo-roscelli.jpg" alt="Nueva imagen" style="border: 1px solid rgb(10,10,10); float: left; margin-right: 5px; height: 70px; width: 70px; font-size: 18px;">
                   <aside>
                    <b id="est0" style="font-size: 18px;">Colegio Agustin Roscelli</b>
-                   <div class="btn-edit-sec" id="btn-elim-educ" onclick="eliminar_educ0()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
-                   <div class="btn-edit-sec" id="btn-camb-educ" onclick="cambiar_educ0()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>       
+                   <div class="btn-edit-sec" id="btn-elim-educ" onclick="eliminar_educ0()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
+                   <div class="btn-edit-sec" id="btn-camb-educ" onclick="cambiar_educ0()" ><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>       
                    <p id="text-est0" style="font-size: 15px; margin: 0px 5px;">Jardin de Infantes - Estudios Primarios</p>
                    <p id="text-año-est0"style="font-size: 12px; margin: 0px 5px;">1986 - 1994</p>
                    <p></p>
@@ -118,8 +118,8 @@
                  <img id="logoED1" src="imagenes\eet n° 3-0.png" alt="Nueva imagen" style="border: 1px solid rgb(10,10,10); float: left; margin-right: 5px; height: 70px; width: 70px; font-size: 18px;">
                   <aside>
                     <b id="est1" style="font-size: 18px;">Escuela Tecnica N° 3 Fray Luis Beltran (Los Hornos)</b>
-                    <div class="btn-edit-sec" id="btn-elim-educ" onclick="eliminar_educ1()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
-                    <div class="btn-edit-sec" id="btn-camb-educ" onclick="cambiar_educ1()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>
+                    <div class="btn-edit-sec" id="btn-elim-educ" onclick="eliminar_educ1()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
+                    <div class="btn-edit-sec" id="btn-camb-educ" onclick="cambiar_educ1()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>
                     <p id="text-est1" style="font-size: 15px; margin: 0px 5px;">Estudios Secundarios</p>
                     <p id="text-año-est1" style="font-size: 12px; margin: 0px 5px;">1995 - 2001</p>
                     <p></p>
@@ -131,7 +131,7 @@
         </div>
     
         <div class="seccion"><b>Hard & Soft Skills</b>
-          <div class="btn-edit-sec" onclick="agregar_skill()" style ="display: none">
+          <div class="btn-edit-sec" onclick="agregar_skill()"><!--style ="display: none"-->
           <a href="#" class="btn-right" aria-label="edit">
             <i class="fas fa-plus"></i>
           </a>
@@ -144,8 +144,8 @@
                     <b>Velocidad de desarrollo</b>
                  </p>
                  <aside>
-                    <div class="btn-edit-sec" data-id="0" onclick="eliminar_skill0()" style ="display: none"><a class="btn-right" href="#" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
-                    <div class="btn-edit-sec" data-id="0" onclick="cambiar_porc0()" style ="display: none"><a class="btn-right" href="#" aria-label="edit"><i class="fa fa-pen"></i></a></div>
+                    <div class="btn-edit-sec" data-id="0" onclick="eliminar_skill0()"><!--style ="display: none"--><a class="btn-right" href="#" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
+                    <div class="btn-edit-sec" data-id="0" onclick="cambiar_porc0()" ><!--style ="display: none"--><a class="btn-right" href="#" aria-label="edit"><i class="fa fa-pen"></i></a></div>
                  </aside>
                  <div id="barra0" style="margin-left: 12%; width: 1000px; height: 22px; border-radius: 10px; border: 1px solid rgb(10, 10, 10);">
                    <div id="barra-porc0" style="width: 55%; height: 20px; border-radius: 8px; background-color: rgb(1, 24, 150);"></div>
@@ -157,8 +157,8 @@
                    <b>Resolucion de problemas</b>
                 </p>
                 <aside>
-                   <div class="btn-edit-sec" data-id="0" onclick="eliminar_skill1()" style ="display: none" ><a class="btn-right" href="#" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
-                   <div class="btn-edit-sec" data-id="0" onclick="cambiar_porc1()" style ="display: none"><a class="btn-right" href="#" aria-label="edit"><i class="fa fa-pen"></i></a></div>
+                   <div class="btn-edit-sec" data-id="0" onclick="eliminar_skill1()"><!--style ="display: none"--><a class="btn-right" href="#" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>
+                   <div class="btn-edit-sec" data-id="0" onclick="cambiar_porc1()"><!--style ="display: none"--><a class="btn-right" href="#" aria-label="edit"><i class="fa fa-pen"></i></a></div>
                 </aside>
                 <div id="barra1" style="margin-left: 12%; width: 1000px; height: 22px; border-radius: 10px; border: 1px solid rgb(10, 10, 10);">
                   <div id="barra-porc1" style="width: 60%; height: 20px; border-radius: 8px; background-color: rgb(1, 24, 150);"></div>
@@ -168,14 +168,14 @@
           </div>
         </div>  
         <div class="seccion"><b>Proyectos</b>
-            <div class="btn-edit-sec" onclick="agregar_proy()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-plus"></i></a></div>        
+            <div class="btn-edit-sec" onclick="agregar_proy()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-plus"></i></a></div>        
             <br clear="right">
             <br clear="right">
             <div id="div-proyectos">
                 <div class="proyectos-1">
                     <a id="contenidoProy-1">Ninguno actualmente</a>                    
-                    <div class="btn-edit-sec" id="elim_parrafo_proy" onclick="eliminar_contenido_Proy()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>     
-                    <div class="btn-edit-sec" id="camb_parrafo_proy" onclick="cambiar_parrafo_Proy()" style ="display: none"><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>               
+                    <div class="btn-edit-sec" id="elim_parrafo_proy" onclick="eliminar_contenido_Proy()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fas fa-trash-alt"></i></a></div>     
+                    <div class="btn-edit-sec" id="camb_parrafo_proy" onclick="cambiar_parrafo_Proy()"><!--style ="display: none"--><a href="#" class="btn-right" aria-label="edit"><i class="fa fa-pen"></i></a></div>               
                     <br clear="right">
                     <br clear="right">
                 </div>
@@ -187,3 +187,5 @@
 </body>
 <script src="script.js"></script>
 </html>
+
+<!--style ="display: none" en cada boton es lo que no deja verlos en la vista-->
